@@ -1,10 +1,39 @@
-h1 {
-    font-size: 50px;
-    font-weight: 800;
-    text-align: center;
+body {
+    padding: 4rem; 
+    white-space: nowrap;
+    background-image: url( "https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=401&q=80" );
+    background-repeat : no-repeat;
+    background-size : cover;
+    color : white;
 }
 
-h2{
-    font-size: 20px;
-    text-align: center;
+.poem {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.head {
+    width: 50%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#title {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.text {
+    width: 50%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.caluse {
+    margin-bottom: 3.5rem;
 }
