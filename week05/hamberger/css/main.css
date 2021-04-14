@@ -1,0 +1,16 @@
+/* COMMON */
+body {
+    background-color: #f6f5f0;
+}
+
+.material-icons-outlined {
+    color: #f6f5f0;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
