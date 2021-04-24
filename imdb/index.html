@@ -6,28 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMDb</title>
     <link rel = "shortcut icon" href = "./images/favicon.ico" type="image/x-icon"/>
+    <!-- 웹 브라우저 기본 설정 리셋 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 구글 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS연결 -->
     <link rel="stylesheet" href="./css/main.css"/>
 </head>
 <body>
+    <!-- 헤더 -->
     <header>
-        <a href="/" class="logo">
-            <img src="./images/logo.jpg" alt="로고">
-        </a>
-        <div class="header-item">menu</div>
-        <div class="header-item">search</div>
-        <div class="header-item">IMDbPro</div>
-        <div class="header-item">Watchlist</div>
-        <div class="header-item">Sign in</div>
+        <ul>
+            <li class="header-item">
+                <a href="/" class="logo">
+                    <img src="./images/logo.jpg" alt="로고">
+                </a>
+            </li>
+            <li class="header-item">
+                <span class="material-icons">
+                    menu
+                </span>
+                Menu
+            </li>
+            <li class="header-item">
+                <input id="search__box" placeholder="Search IMDb" />
+                <span class="material-icons">
+                    search
+                </span>
+            </li>
+            <!-- <svg class="header-item-test" viewBox="0 0 52 14" xmlns="http://www.w3.org/2000/svg" version="1.1"><g fill="currentColor"></g></svg> -->
+            <li class="header-item">IMDbPro</li>
+            <li class="header-item">Watchlist</li>
+            <li class="header-item">Sign in</li>
+        </ul>
     </header>
+
+    <!-- 첫번쨰:MAIN -->
     <section id="main">
-        main
+        <div class="main1">
+            <div class="main-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BYTEyNDEzNjAtNjIyNy00ZGYxLWJjNDYtNTJhM2JhYjIxYTBmXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg" alt="main poster">
+            </div>
+            <div class="main-title"></div>
+        </div>
+        <div class="main2">
+            <div class="main2-title">Up next</div>
+            <div class="main2-movie1">
+                <img src="https://m.media-amazon.com/images/M/MV5BYzM0YjJlMWEtZTg0MS00NjM4LWJkMDktN2VmZGU2ZjQ1YjI2XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_QL75_UX280_CR0,0,280,414_.jpg" />
+                <span>'Shang-Chi and the Legend of the Ten Rings'</span>
+                <span>Watch the Teaser</span>
+            </div>
+            <div class="main2-movie2">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDAzMzlkNzMtNjlhOC00YjNjLWFiZmEtNmVhZTA4ZjI3OTllXkEyXkFqcGdeQXVyNDYzNjU3ODM@._V1_QL75_UX280_CR0,0,280,414_.jpg" />
+                <span>How the Stars of 'Mortal Kombat'Got Into Character</span>
+                <span>Putting on the Iconic Sub-Zero Costume</span>
+            </div>
+            <div class="main2-movie3">
+                <img src="https://m.media-amazon.com/images/M/MV5BY2MxYjVlNzAtMDdhOS00N2U2LThlYWQtN2MwMWJjYjFhYzM5XkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_QL75_UX280_CR0,0,280,414_.jpg" />
+                <span>"Ted Lasso"Returns This Summer</span>
+                <span>Watch the Season 2 Teaser</span>
+            </div>
+            <div class="main2-more">Browse trailers</div>
+        </div>
+
+    <!-- 두번째:Featured today -->
     </section>
     <section id="today">
+        <!-- 사진저장할 수 있는법 찾기 -->
         Featured today
     </section>
     <section id="watch">
-        What to watch
+        <div>What to watch</div>
     </section>
     <section id="videos">
         explore vidoes
