@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netfilx</title>
+    <!-- 파비콘 -->
+    <link rel = "shortcut icon" href = "./images/favicon.ico" type="image/x-icon"/>
     <!-- 웹 브라우저 기본 설정 리셋 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!-- 구글폰트 -->
@@ -14,7 +16,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- CSS연결 -->
     <link rel="stylesheet" href="./css/main.css"/>
+    <!-- main.js 연결 -->
+    <script async src="./js/main.js"></script>
 </head>
+
+<!-- 해상도가 1280x720인 화면에서 프로젝트를 제작했습니다 -->
 <body>
     <!-- 헤더 -->
     <header>
@@ -35,26 +41,180 @@
             </span>
         </div>
     </header>
-    <main>
-        <!-- 메인포스터 -->
-        <section class="main_poster">
-            <img class="main_img" src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXns_PW815mruSuOeiUOFEPIpC81XmhvBh2IDqaYlbl3nmVLsrkzp5ESorpQooJyP8Ki0_mmL8bcpfkBuo6e4RfwyWlCFbMIl90yvRS9aJ-bpaYc-rbJQu4lW5zBiUj9u6JgQ0Gw2Fqif5l34qMjzgEt7unT.webp?r=7a3" alt="메인포스터"/>
+    <!-- 메인 -->
+    <section class="mainPoster">
+        <div class="main_wrapper">
+            <img src="./images/mainPoster.webp" alt="메인포스터:걸스오브막시" />
             <div class="main_vignette">
-                <div main_logo>
-                    <img src="images/mainTitle.webp" alt="메인포스터 로고" />
+                <div class="main_logo">
+                    <img src="./images/mainTitle.webp" alt="메인포스터 로고" />
                 </div>
             </div>
-        </section>
-    </main>
-    <section class="posters">
-        <div class="foreign_TV slide">
-            <div class="slideTitle">외국 TV 프로그램</div>
-        </div>
-        <div class="trending_now slide">
-            <div class="slideTitle">지금 뜨는 콘텐츠</div>
         </div>
     </section>
-    <!-- 슬라이더 -->
-    
+    <!-- 슬라이드 -->
+    <section class="posters">
+        <div class="slide1_title">내가 찜한 콘텐츠</div>
+        <div class="inner">
+            <div class="slider">
+                <!-- 화살표 -->
+                <div class="material-icons arrow--left">
+                    arrow_left
+                </div>
+                <div class="material-icons arrow--right">
+                    arrow_right
+                </div>
+                <!-- 슬라이드 페이지 -->
+                <div class="slide_page slide1">
+                    <div class="slide__content">
+                        <div class="slide1_poster">
+                            <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABddXgy-oGheZSZTodZSJBECO-PKJX09hyIBlmsM79_NQmKqXvRO8mxbcFZJtqM8tHlnFXXxPUQ9xd0hucgBP-TkaKUtCgKVX55mUxGHaWdHftuSSXaNWEDioVT4e.jpg?r=6de"/>
+                        </div>
+                        <div class="slide1_poster">
+                            <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQxBl5n6HUlcHTEiQXnDGmhOVYV-iY6zz-l1bigMUGjsiu-tDhBVKhOZbwy1lQzymN6pPU1BFWgWDF0bUhTSPuJNWNv4gzAGwGh6NUa7vYT-HuPPqESVmvGf2OWd.jpg?r=1b9"/>
+                        </div>
+                        <div class="slide1_poster">
+                            <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWhOB8PbxpORTMo21B0TBHVUvaEn4dAEOlGqUMFtyfxXGMNMvH9g8v6IzOn9Kd4iePX4OrRMclr97QjK5BcXSn7lNHK6rMFqExb4DvpnYvGqgbynqNq-N3VAKHrG.jpg?r=cb7"/>
+                        </div>
+                        <div class="slide1_poster">
+                            <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUEbHaWsyLty9mEO_tY6Lje-xlOlexTKP2nZh7egNo6GBIa0g2Uyay0L-UGdeWocakUM7HKLg7cQMQbJEvMda-8RdYSR5-hZxjClEY3hPRETTE6VH0QPAKy_yG9y.jpg?r=cba"/>
+                        </div>
+                        <div class="slide1_poster">
+                            <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaqJUT06FwWNsppng7xxY0gd9a3NGYtTn6-bTnB6GGS37cFWhNTZWpJGKIVCWwbtuNNRGzl1w_poEBuB9Qibhw8yjhUmU76MhVmv_Ao53vfqimxlaNDQa7kek0Gl.jpg?r=ddb"/>
+                        </div>
+                        <div class="slide1_info_top">시즌 3개 2020</div>
+                        <div class="slide1_info_top">1시간 51분 2021</div>
+                        <div class="slide1_info_top">14분 2021</div>
+                        <div class="slide1_info_top">시즌1 2020</div>
+                        <div class="slide1_info_top">1시간 54분 2021</div>
+                        <div class="slide1_info_bottom">감동과 영감, 흥미진진</div>
+                        <div class="slide1_info_bottom">위트, 감동과 영감</div>
+                        <div class="slide1_info_bottom">매혹적인, 다큐멘터리</div>
+                        <div class="slide1_info_bottom">엉뚱 기발, TV프로그램 판타지</div>
+                        <div class="slide1_info_bottom">엉뚱 기발, 액션 코미디</div>
+                    </div>
+                </div>
+                <div class="slide_page slide2">
+                    <div class="slide__content">
+                        <div class="slide__content">
+                            <div class="slide1_poster">
+                                <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQQDr4NBW2nk9_DieHt0rcaF0P4GDC1lF8KpeKYwk1vgL9n-btLwahqqq8Kx26_BTXp7ZhRWdqxR3gEG227ZkHrQFQs.webp?r=66c"/>
+                            </div>
+                            <div class="slide1_poster">
+                                <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYIQI7YMy1cGhjlka01NUeUVXFVzmsq92QHk8dtBfe9GnVtQPOBv75NIn9cESKrLWufkoNDeuJVINqh4iNr4qyhmZ8eS2O8XrEL32ESlI_wDR_nC_Y2-U_XaH70n.jpg?r=ab1"/>
+                            </div>
+                            <div class="slide1_poster">
+                                <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcj8zvKlgJasULjKW98Xql7ZINryja8oChA0RDspf8bngOAtZvDD1Tj4S17bbA0BTp5BLP8yiaHKZPOygLhXEff3-HKfBZkA0Wvq6O3o0j-dbsSrQa0--uvXjCGP9gdk3NbPgGSExLa4i1IwhvLQJQUGJ7AWy46S8hsRje9vXblszfsQa7kHgip4z_b3.webp?r=08d"/>
+                            </div>
+                            <div class="slide1_poster">
+                                <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ9pEbGWvlqzi_pzI7VzaAmU3nCrztyHBejbpmXUxoECSkfrLQoK7lsczXbQJLlbXedV4oZUcnr9ZeMgMjLfvHX_Wr8.webp?r=ccc"/>
+                            </div>
+                            <div class="slide1_poster">
+                                <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcK8PhwB0dcwns8XkeybFAReLEE7DVivSWm1XLjtOm-vWpeNwsoESfyJchbhsgm021EYAsCNjsHNIIyIwjzoRTj4tyE.webp?r=fd4"/>
+                            </div>
+                            <div class="slide1_info_top">시즌 6개 2019</div>
+                            <div class="slide1_info_top">시즌 3개 2019</div>
+                            <div class="slide1_info_top">시즌 1개 2021</div>
+                            <div class="slide1_info_top">1시간 53분 2017</div>
+                            <div class="slide1_info_top">2시간 2015</div>
+                            <div class="slide1_info_bottom">푼수 캐릭터, 시트콤</div>
+                            <div class="slide1_info_bottom">불길한 기운, 무서운 이야기</div>
+                            <div class="slide1_info_bottom">서서히 조여오는 긴장감 미스터리</div>
+                            <div class="slide1_info_bottom">기분 좋아지는 시간, 가슴 뭉클</div>
+                            <div class="slide1_info_bottom">위트, 푼수 캐릭터</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foreignSitcom">
+            <div class="slide_title">해외 시트콤 수상작</div>
+            <div class="slide_factors">
+                <div class="slide1_poster">
+                    <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcLCtX6_Xw61fcL7N3QjDfn_6vYvhPfiH7PLE3xBH8chF4ZAw7cHuNbr3OtmUED-efTtavRjedPAsugUE7q2MgF7gGU.webp?r=053"/>
+                </div>
+                <div class="slide1_poster">
+                    <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdrnPIt402UJGrPZ6eUFCwRHsw2dFp0u0zgVcthpy0tzYCQrRuapCeXZ45ahrOk_3lF3pItrKKi5TLHJU6vBx76TIRs.webp?r=c8c"/>
+                </div>
+                <div class="slide1_poster">
+                    <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRI3ZSEGU9kvDTZrGd0oszvM1rZk6WtV5ikpoeECFtojXT2pRvT-Ox_AC4CZMveTv6ay7jzd74QwHuwIRkeyhkq71b4.webp?r=247"/>
+                </div>
+                <div class="slide1_poster">
+                    <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABd7n3c2XydgRovvmvHkSbfK3qVFaCnRgvPwNSLpRjFM6ySpFVbyplP5jxt1ieZ_6y9gAr4ckfs0ZdHkN4NuYyFdUhrT5Q0SKR-QqiD_aF_Y8n_pHStOi9E2U89HcUsNHyg.webp?r=c03"/>
+                </div>
+                <div class="slide1_poster">
+                    <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABV4mEEXp2jG98cTTYp-BFhDrg1_p7nVOUxvMJyAGXSW3wbo9JppGPAkO8yMbRInLddjwYi1tTDHOarrvzcsocziIsLc.webp?r=5fc"/>
+                </div>
+                <div class="slide1_info_top">시즌 11개 2019</div>
+                <div class="slide1_info_top">시즌 10개 2003</div>
+                <div class="slide1_info_top">시즌 12개 2018</div>
+                <div class="slide1_info_top">시즌 5개 2021</div>
+                <div class="slide1_info_top">시즌 9개 2014</div>
+                <div class="slide1_info_bottom">위트, 가슴 뭉클</div>
+                <div class="slide1_info_bottom">위트, 엉뚱 기발</div>
+                <div class="slide1_info_bottom">엉뚱 기발, 코미디</div>
+                <div class="slide1_info_bottom">코미디, 멀티캐스킹</div>
+                <div class="slide1_info_bottom">감상적, 푼수캐릭터</div>
+            </div>
+        </div>
+        <div class="realityTV">
+            <div class="slide_title">리얼리티 TV</div>
+            <div class="slide_factors">
+                <div class="slide1_poster">
+                    <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdKs93l2oXBMIHGYoXmM59FcmX2Fg-jG4a4ArcrX1MT3pPWYIuucO1NxRNVVO-wLNbp_KLjkUoADKVlT0_TewURhs3RPrIEtERPHXIGXWsrMp286Yzk8h811c60saEnT5Q.webp?r=36e"/>
+                </div>
+                <div class="slide1_poster">
+                    <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRXWwiRurnVKfuUK4CHRKrlF9FYMqlbCKBKBBnZWN14_iUvZZz0xUi7m693lZIoBOtKVnAb3N7BV0rNkm980zsDb6hfYU7psc7jDLVF6BqIe3P3V70hoK2BORnqY.jpg?r=b35"/>
+                </div>
+                <div class="slide1_poster">
+                    <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABafuWdtOqIfLu3kxAaKfHZKurtdfP-TuubxQVg4RZDAjVgcCyi1akdZGlFrjKdFVNz0p_zf8UOIzSv62ymldPR6HV-YXFpkIMpIXw0OvVW_rrbZabIBFB3HFNaLiljyZFg.webp?r=b37"/>
+                </div>
+                <div class="slide1_poster">
+                    <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaVae8_Oj9JuKLC0JUzQZfz7LCpchbx2da42PCkCRqbQRT5XeM5jR19dPTJg_nKnVEdgL0tywecUITSGkyT6om8LA2JoHpebkVLpTYDae0JhELYebzXKoqB2Z_-DGcmtxA.webp?r=adf"/>
+                </div>
+                <div class="slide1_poster">
+                    <img src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQjVRY7cmUHQCx9kitsgsXzJ9_kJ84V2HTjcmOLoya-FLac498Kdkh4iEqMlIxzVeeZKagJWjOi8UPFwnEqqGjW9ZuRuGX9__0amUxRjWkHuQyzAARGdo_hDAQbW.jpg?r=bbb"/>
+                </div>
+                <div class="slide1_info_top">시즌 2개 2021</div>
+                <div class="slide1_info_top">시즌 1개 2019</div>
+                <div class="slide1_info_top">시즌 3개 2021</div>
+                <div class="slide1_info_top">시즌 2개 2021</div>
+                <div class="slide1_info_top">시즌 1개 2020</div>
+                <div class="slide1_info_bottom">가슴 뭉클, 부모라면 공감</div>
+                <div class="slide1_info_bottom">감동과 영감, 흥미진진</div>
+                <div class="slide1_info_bottom">위트, 푼수 캐릭터</div>
+                <div class="slide1_info_bottom">결혼, 한국작품</div>
+                <div class="slide1_info_bottom">기분이 좋아지는 시간</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="member_footer_links">
+            <div class="member_footer_links_wrapper">자막 및 음성</div>
+            <div class="member_footer_links_wrapper">음성 지원</div>
+            <div class="member_footer_links_wrapper">고객센터</div>
+            <div class="member_footer_links_wrapper">기프트카드</div>
+            <div class="member_footer_links_wrapper">미디어 센터</div>
+            <div class="member_footer_links_wrapper">투자 정보(IR)</div>
+            <div class="member_footer_links_wrapper">입사 정보</div>
+            <div class="member_footer_links_wrapper">이용약관</div>
+            <div class="member_footer_links_wrapper">개인정보</div>
+            <div class="member_footer_links_wrapper">법적 고지</div>
+            <div class="member_footer_links_wrapper">쿠키 설정</div>
+            <div class="member_footer_links_wrapper">회사 정보</div>
+            <div class="member_footer_links_wrapper">동의하기</div>
+        </div>
+        <span class="service_code">서비스 코드</span>
+        <div class="text_box">
+            <div class="text_line">넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0058</div>
+            <div class="text_line">대표: 레지널드 숀 톰프슨</div>
+            <div class="text_line">이메일 주소: korea@netflix.com</div>
+            <div class="text_line">주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</div>
+            <div class="text_line">사업자등록번호: 165-87-00119</div>
+            <div class="text_line">클라우드 호스팅: Amazon Web Services Inc.</div>
+            <div class="text_line">공정거래위원회 웹사이트</div>
+            <div class="text_line">{c5013ba3-6885-4ce1-9b04-7f1244548d10}</div>
+        </div>
+    </footer>
 </body>
 </html>

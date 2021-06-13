@@ -1,3 +1,8 @@
+body {
+    background-color: black;
+    color: white
+}
+
 /* 헤더 */
 header {
     width:100%;
@@ -31,48 +36,195 @@ header img {
     width:150px;
 }
 
-/* 메인 */
-main {
-    width: 100%;
+/* 메인포스터 */
+.mainPoster {
     height: 720px;
-    z-index: 1;
-}
-
-main .main_poster img {
-    width:100%;
-    position: absolute;
-    top: 0;
-}
-
-main .main_vignette {
-    position: relative;
     width: 100%;
-    height: 720px;
-    top: 0;
     margin-bottom: 20px;
+    position: absolute;
+}
+
+.mainPoster .main_wrapper {
+    width: 100%;
+    height: 720px;
+}
+
+.main_vignette {
+    width: 100%;
+    height: 720px;
+    margin-bottom: 20px;
+    top: 0px;
+    position: absolute;
+}
+
+.main_logo {
+    position: relative;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
 }
 
 /* 슬라이드 */
-.slide {
-    margin: 10px 0;
-    width: 100%;
-    height: 221.3px;
+.posters .slide1_title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
 }
 
-.posters {
-    height: 1000px;
+.inner {
+    position: absolute;
     top: 720px;
+    width: 100%;
+    margin: 0 auto;
+    height: 250px;
+    /* inner안의 모든 요소를 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN SLIDER */
+.inner .slider {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    /* position: absolute; */
+}
+
+.inner .slider .slide_page {
+    position: relative;
+    z-index: 1;
+}
+
+/* SLIDER CONTENT */
+.inner .slider .slide__content {
+    width: 100%;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner .slider .slide__content span {
+    font-size: 80px;
+    color: #F6F5F0;
+}
+
+/* SLIDER ARROW */
+.inner .slider .arrow--left, .inner .slider .arrow--right {
+    position: absolute;
+    top: 50%;
+    font-size: 80px;
+    margin-top: -40px;
+    color: #F6F5F0;
+    cursor: pointer;
     z-index: 2;
 }
 
-/* 임시 */
-.foreign_TV { 
-    background-color: cornflowerblue;
-    z-index: 3;
-    top: 1000px;
+.inner .slider .arrow--left {
+    left: 0px;
 }
 
-.trending_now { 
-    background-color: rgb(203, 255, 15);
-    top: 1000px;
+.inner .slider .arrow--right {
+    right: 0px;
+}
+
+.slide__content {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+    grid-auto-rows: 130px, 20px, 20px;
+}
+
+.slide1_poster {
+    width: 233px;
+    height: 130px;
+    /* object-fit: cover; */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide1_info_top {
+    width: 233px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+}
+
+.slide1_info_bottom {
+    width: 233px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/* 해외시트콤 */
+.foreignSitcom {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 970px;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.slide_factors {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+    grid-auto-rows: 130px, 20px, 20px;
+}
+
+/* 리얼리티TV */
+.realityTV {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 1280px;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 1570px;
+    justify-self: center;
+    align-items: center;
+    padding: 20px;
+    color: gray;
+    margin: 0 50px;
+    position: relative;
+}
+
+footer .member_footer_links {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-auto-rows: 18px, 18px, 18px, 18px;
+    gap: 16px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+footer .service_code {
+    padding: 5px;
+    border: gray;
+    border-style: solid;
+    margin-left: 20px;
+}
+
+footer .text_box {
+    margin: 15px;
+    bottom: 0px;
+}
+
+footer .text_line {
+    margin: 5px;
 }
