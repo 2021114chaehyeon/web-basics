@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMDb</title>
-    <link rel = "shortcut icon" href = "./images/favicon.ico" type="image/x-icon"/>
+    <title>Netfilx</title>
     <!-- 웹 브라우저 기본 설정 리셋 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!-- 구글폰트 -->
@@ -19,82 +18,43 @@
 <body>
     <!-- 헤더 -->
     <header>
-        <ul>
-            <li class="header-item">
-                <a href="/" class="logo">
-                    <img src="./images/logo.jpg" alt="로고">
-                </a>
-            </li>
-            <li class="header-item">
-                <span class="material-icons">
-                    menu
-                </span>
-                Menu
-            </li>
-            <li class="header-item">
-                <input id="search__box" placeholder="Search IMDb" />
-                <span class="material-icons">
-                    search
-                </span>
-            </li>
-            <!-- <svg class="header-item-test" viewBox="0 0 52 14" xmlns="http://www.w3.org/2000/svg" version="1.1"><g fill="currentColor"></g></svg> -->
-            <li class="header-item">IMDbPro</li>
-            <li class="header-item">Watchlist</li>
-            <li class="header-item">Sign in</li>
-        </ul>
+        <div class="header_left">
+            <span class="material-icons">
+                menu
+            </span>
+            <a href="/" class="logo">
+                <img src="/images/netflixLogo.png" alt="로고">
+            </a>
+        </div>
+        <div class="header_right">
+            <span class="material-icons">
+                search
+            </span>
+            <span class="material-icons">
+                more_horiz
+            </span>
+        </div>
     </header>
-
-    <!-- 첫번쨰:MAIN -->
-    <section id="main">
-        <div class="main1">
-            <div class="main-poster">
-                <img src="https://m.media-amazon.com/images/M/MV5BYTEyNDEzNjAtNjIyNy00ZGYxLWJjNDYtNTJhM2JhYjIxYTBmXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg" alt="main poster">
+    <main>
+        <!-- 메인포스터 -->
+        <section class="main_poster">
+            <img class="main_img" src="https://occ-0-2794-1009.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXns_PW815mruSuOeiUOFEPIpC81XmhvBh2IDqaYlbl3nmVLsrkzp5ESorpQooJyP8Ki0_mmL8bcpfkBuo6e4RfwyWlCFbMIl90yvRS9aJ-bpaYc-rbJQu4lW5zBiUj9u6JgQ0Gw2Fqif5l34qMjzgEt7unT.webp?r=7a3" alt="메인포스터"/>
+            <div class="main_vignette">
+                <div main_logo>
+                    <img src="images/mainTitle.webp" alt="메인포스터 로고" />
+                </div>
             </div>
-            <div class="main-title"></div>
+        </section>
+    </main>
+    <section class="posters">
+        <div class="foreign_TV slide">
+            <div class="slideTitle">외국 TV 프로그램</div>
         </div>
-        <div class="main2">
-            <div class="main2-title">Up next</div>
-            <div class="main2-movie1">
-                <img src="https://m.media-amazon.com/images/M/MV5BYzM0YjJlMWEtZTg0MS00NjM4LWJkMDktN2VmZGU2ZjQ1YjI2XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_QL75_UX280_CR0,0,280,414_.jpg" />
-                <span>'Shang-Chi and the Legend of the Ten Rings'</span>
-                <span>Watch the Teaser</span>
-            </div>
-            <div class="main2-movie2">
-                <img src="https://m.media-amazon.com/images/M/MV5BNDAzMzlkNzMtNjlhOC00YjNjLWFiZmEtNmVhZTA4ZjI3OTllXkEyXkFqcGdeQXVyNDYzNjU3ODM@._V1_QL75_UX280_CR0,0,280,414_.jpg" />
-                <span>How the Stars of 'Mortal Kombat'Got Into Character</span>
-                <span>Putting on the Iconic Sub-Zero Costume</span>
-            </div>
-            <div class="main2-movie3">
-                <img src="https://m.media-amazon.com/images/M/MV5BY2MxYjVlNzAtMDdhOS00N2U2LThlYWQtN2MwMWJjYjFhYzM5XkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_QL75_UX280_CR0,0,280,414_.jpg" />
-                <span>"Ted Lasso"Returns This Summer</span>
-                <span>Watch the Season 2 Teaser</span>
-            </div>
-            <div class="main2-more">Browse trailers</div>
+        <div class="trending_now slide">
+            <div class="slideTitle">지금 뜨는 콘텐츠</div>
         </div>
-
-    <!-- 두번째:Featured today -->
     </section>
-    <section id="today">
-        <!-- 사진저장할 수 있는법 찾기 -->
-        Featured today
-    </section>
-    <section id="watch">
-        <div>What to watch</div>
-    </section>
-    <section id="videos">
-        explore vidoes
-    </section>
-    <section id="streaming">
-        explore what's streaming
-    </section>
-    <section id="movies">
-        explore movies & tv show
-    </section>
-    <section id="more">
-        more to explore
-    </section>
-    <footer>
-        footer
-    </footer>
+    <!-- 슬라이더 -->
+    
 </body>
 </html>
